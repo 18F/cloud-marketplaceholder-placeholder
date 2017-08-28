@@ -20,15 +20,20 @@ h6 {
   font-weight: 100;
 }
 
+h4 {
+  font-weight: 700;
+}
+
 h3:before {
   font-size: 2rem;
 }
 
 h3 {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: 700;
-  letter-spacing: .1rem;
+  letter-spacing: .2rem;
   text-transform: uppercase;
+  margin-bottom: 1.5rem;
 }
 
 a:hover,
@@ -80,6 +85,7 @@ header {
     background: $slighty-transparent-blue;
     color: $black;
     font-size: 2rem;
+    line-height: 1.5;
     padding: 1em;
     position: relative;
 
@@ -104,9 +110,9 @@ header {
     justify-content: center;
     padding: 0.625em 1.875em;
 
-    font-family: Lato, "Helvetica Neue", Helvetica, arial, sans-serif;
+    font-family: Helvetica, arial, sans-serif;
     font-size: 14px;
-    font-weight: 200;
+    font-weight: 600;
 
     img {
       height: 12px;
@@ -185,7 +191,8 @@ nav {
 
 section h1 {
   border-bottom: 12px solid;
-  padding-bottom: .5em;
+  margin-bottom: 1em;
+  padding-bottom: .3em;
   position: relative;
 }
 
@@ -317,15 +324,7 @@ aside {
   }
 }
 
-#hypothesis h1 {
-  border-color: $blue;
-
-  &::after {
-    border-color: $blue;
-  }
-}
-
-#prototype h1 {
+#about h1 {
   border-color: $red;
 
   &::after {
@@ -333,7 +332,23 @@ aside {
   }
 }
 
-#about h1 {
+#prototype h1 {
+  border-color: $blue;
+
+  &::after {
+    border-color: $blue;
+  }
+}
+
+#relevant h1 {
+  border-color: $red;
+
+  &::after {
+    border-color: $red;
+  }
+}
+
+#questions h1 {
   border-color: $green;
 
   &::after {
@@ -551,7 +566,7 @@ footer {
   }
 
   header h1 {
-    padding: 3.5em 1.5em 1.5em;
+    padding: 1.5em 1.5em 1.5em;
     width: 50%;
   }
 
