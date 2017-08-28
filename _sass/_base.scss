@@ -187,29 +187,6 @@ section h1 {
   border-bottom: 12px solid;
   padding-bottom: .5em;
   position: relative;
-
-  &::after {
-    $icon-spacing: 4rem;
-    $icon-size: ($left-gutter - $icon-spacing - 2rem);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: 65% auto;
-    border-radius: $icon-size;
-    border: 4px solid;
-    content: "";
-    display: block;
-    height: $icon-size;
-    margin-right: $icon-spacing;
-    margin-top: -($icon-size / 2);
-    position: absolute;
-    right: 100%;
-    top: 100%;
-    width: $icon-size;
-
-    @media all and (max-width: 1150px) {
-      display: none;
-    }
-  }
 }
 
 
@@ -218,7 +195,7 @@ aside {
   top: $right-gutter * 3.7;
   right: $right-gutter / 6;
 
-  .download-text {
+  .prototype-text {
     strong {
       display: inline-block;
       font-size: .9em;
@@ -234,7 +211,7 @@ aside {
     }
   }
 
-  .download-image {
+  .prototype-image {
     display: none;
   }
 
@@ -321,12 +298,12 @@ aside {
           align-items: center;
         }
 
-        .download-text,
-        .download-image {
+        .prototype-text,
+        .prototype-image {
           display: block;
         }
 
-        .download-text {
+        .prototype-text {
           span {
             display: block;
           }
@@ -340,29 +317,26 @@ aside {
   }
 }
 
-#work h1 {
+#hypothesis h1 {
   border-color: $blue;
 
   &::after {
-    background-image: url($cloud-icon);
     border-color: $blue;
   }
 }
 
-#report h1 {
+#prototype h1 {
   border-color: $red;
 
   &::after {
-    background-image: url($graph-icon);
     border-color: $red;
   }
 }
 
-#contact h1 {
+#about h1 {
   border-color: $green;
 
   &::after {
-    background-image: url($mail-icon);
     border-color: $green;
   }
 }
@@ -462,7 +436,7 @@ section .container {
     margin-top: 0;
   }
 
-  .downloads {
+  .prototype {
     width: 100%;
 
     li {
@@ -518,7 +492,7 @@ section .container {
 
 }
 
-// report download "button"
+// report prototype "button"
 .button {
   background: $green;
   border-color: transparent;;

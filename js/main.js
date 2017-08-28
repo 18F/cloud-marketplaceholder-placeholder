@@ -1,11 +1,11 @@
 (function(window) {
   document.body.addEventListener('click', function(e) {
     if (e.target.matches('aside h3 span')) {
-      var downloadEl = document.querySelector('#downloads');
-      if (downloadEl.matches('.open')) {
-        return downloadEl.classList.remove('open');
+      var prototypeEl = document.querySelector('#prototype');
+      if (prototypeEl.matches('.open')) {
+        return prototypeEl.classList.remove('open');
       }
-      return downloadEl.classList.add('open');
+      return prototypeEl.classList.add('open');
     }
   });
 })(window);

@@ -1,0 +1,16 @@
+<ul class="prototype">
+  {% for prototype in page.prototype %}
+    {% if prototype.image %}
+    <li>
+      <a class="cover" href="{{ prototype.href | prepend: site.baseurl }}">
+        <img src="{{ prototype.image.href | prepend: site.baseurl }}" alt="{{ prototype.image.alt }}">
+      </a>
+
+      <a class="button" href="{{ prototype.href | prepend: site.baseurl }}">
+        <strong>{{ prototype.text.primary }}</strong>
+        {{ prototype.text.secondary }}
+      </a>
+    </li>
+    {% endif %}
+  {% endfor %}
+</ul>
